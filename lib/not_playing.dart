@@ -36,7 +36,6 @@ class _NotPlayingState extends State<NotPlaying> {
   GameData gameData;
 
   _NotPlayingState({@required this.finished, @required this.gameData}) {
-    print('new not playing');
     if (finished) {
       _recentGames.pushNew(gameData);
     }

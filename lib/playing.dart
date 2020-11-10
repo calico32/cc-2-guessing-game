@@ -53,10 +53,8 @@ class _PlayingState extends State<Playing> {
       _message = '';
       if (widget.gameData.guesses.contains(guessValue)) {
         _message = "You've already guessed that number!";
-        print('existing guess made: $guessValue');
       } else {
         widget.gameData.guesses.add(guessValue);
-        print('guess made: $guessValue');
       }
 
       _playHint = guessValue < widget.gameData.targetNumber

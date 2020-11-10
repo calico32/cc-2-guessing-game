@@ -45,7 +45,6 @@ class RecentGamesProvider {
 
   void pushNew(GameData game) {
     _populate();
-    print('new game: ${jsonEncode(game.toJson())}');
     _games.insert(0, game);
     _games.removeLast();
     _saveGames();
